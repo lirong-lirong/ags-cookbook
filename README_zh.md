@@ -61,11 +61,19 @@ ags-cookbook/
     │   ├── README.md
     │   ├── automation_cart_demo.py
     │   └── requirements.txt
-    └── swe-bench/                         # SWE-Bench 沙箱示例
+    └── swe-bench-rl/                      # SWE-Bench RL 沙箱示例
         ├── README.md
+        ├── patches/                         # 上游仓库的 patch 文件
+        │   └── r2e-gym-ags-clean.patch
+        ├── ags_tool/                        # AGS 沙箱工具（直接包含）
+        │   ├── pyproject.toml
+        │   ├── src/ags_tool/
+        │   ├── example/
+        │   └── tcr_image_tool/
         ├── inference/                     # LLM 推理
         │   └── swe-bench-ags-python.ipynb
         └── rl-training/                   # 分布式 PPO 训练
+            ├── train.py
             └── rllm_with_ags.ipynb               
 ```
 

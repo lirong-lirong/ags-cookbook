@@ -61,11 +61,19 @@ ags-cookbook/
     │   ├── README.md
     │   ├── automation_cart_demo.py
     │   └── requirements.txt
-    └── swe-bench/                         # SWE-Bench with AgentSandbox
+    └── swe-bench-rl/                      # SWE-Bench RL with AgentSandbox
         ├── README.md
+        ├── patches/                         # Patch files for upstream repos
+        │   └── r2e-gym-ags-clean.patch
+        ├── ags_tool/                        # AGS sandbox tool (included directly)
+        │   ├── pyproject.toml
+        │   ├── src/ags_tool/
+        │   ├── example/
+        │   └── tcr_image_tool/
         ├── inference/                     # LLM inference
         │   └── swe-bench-ags-python.ipynb
         └── rl-training/                   # Distributed PPO training
+            ├── train.py
             └── rllm_with_ags.ipynb               
 ```
 

@@ -33,12 +33,12 @@ examples/
 │   ├── README.md          # Detailed usage instructions
 │   ├── automation_cart_demo.py  # Shopping flow automation demo
 │   └── requirements.txt   # Dependencies
-└── swe-bench/             # SWE-Bench with AgentSandbox
+└── swe-bench-rl/          # SWE-Bench RL with AgentSandbox
     ├── README.md          # Overview
+    ├── patches/           # Patch files for upstream repos
+    ├── ags_tool/          # AGS sandbox tool
     ├── inference/         # LLM inference on SWE-Bench tasks
-    │   └── swe-bench-ags-python.ipynb
-    └── rl-training/       # Distributed PPO training
-        └── rllm_with_ags.ipynb
+    └── rl-training/       # SWE-Bench for RL training
 ```
 
 ## Example List
@@ -138,7 +138,7 @@ Demonstrates using Browser sandbox with Playwright to complete "Search → Add t
 
 **Tech Stack**: playwright
 
-### swe-bench - SWE-Bench with AgentSandbox
+### swe-bench-rl - SWE-Bench RL with AgentSandbox
 
 Demonstrates using AgentSandbox cloud sandbox to complete SWE-Bench code repair tasks, with two sub-examples:
 

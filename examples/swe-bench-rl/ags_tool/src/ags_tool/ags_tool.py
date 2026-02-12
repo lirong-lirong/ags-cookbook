@@ -39,7 +39,7 @@ import os
 
 
 class AGSConfig(BaseModel):
-    """Configuration for Tencent Cloud AGS (Agent Sandbox Server) deployment."""
+    """Configuration for Tencent Cloud AGS (Agent Sandbox Service) deployment."""
 
     type: Literal["tencentags"] = "tencentags"
     """Discriminator for (de)serialization/CLI. Do not change."""

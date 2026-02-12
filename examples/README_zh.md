@@ -33,12 +33,12 @@ examples/
 │   ├── README.md          # 详细使用说明
 │   ├── automation_cart_demo.py  # 购物流程自动化演示
 │   └── requirements.txt   # 依赖包
-└── swe-bench/             # SWE-Bench 沙箱示例
+└── swe-bench-rl/          # SWE-Bench RL 沙箱示例
     ├── README.md          # 总览
-    ├── inference/         # LLM 推理完成 SWE-Bench 任务
-    │   └── swe-bench-ags-python.ipynb
-    └── rl-training/       # 分布式 PPO 训练
-        └── rllm_with_ags.ipynb
+    ├── patches/           # 上游仓库的 patch 文件
+    ├── ags_tool/          # AGS 沙箱工具抽象
+    ├── inference/         # SWE-Bench 测试
+    └── rl-training/       # SWE-Bench RL训练
 ```
 
 ## 示例列表
@@ -138,7 +138,7 @@ examples/
 
 **技术栈**：playwright
 
-### swe-bench - SWE-Bench 沙箱示例
+### swe-bench-rl - SWE-Bench RL 沙箱示例
 
 展示如何使用 AgentSandbox 云端沙箱完成 SWE-Bench 代码修复任务，包含两个子示例：
 
