@@ -4,7 +4,8 @@ Copy an OSWorld base image to your own registry and open its desktop, then build
 an image with Claude Code installed. Complete just the first step to try the desktop.
 
 See the [Chinese base image guide](docs/image-guide.zh-CN.md) for more customization
-options and OSWorld2 Docker usage.
+options and Docker-in-Docker (DinD) usage. The default OSWorld1 base includes
+DinD storage support; Docker itself is not preinstalled.
 
 ## Prerequisites
 

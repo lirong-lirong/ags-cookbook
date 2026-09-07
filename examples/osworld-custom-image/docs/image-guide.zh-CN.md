@@ -16,7 +16,7 @@
 OSWorld1：
 
 ```text
-ccr.ccs.tencentyun.com/ags-image/osworld1-base:upstream-091f5ef1-server-0919a09-ags.1@sha256:120782c9f4b928654a950b3d8bb334f20c0ef7422d27a1a84e7b0ff8079c956a
+ccr.ccs.tencentyun.com/ags-image/osworld1-base:upstream-091f5ef1-server-0919a09-ags.2@sha256:b91a90cacd68d652d98d78cf83d16c39e191a69f18b8a866c94a5ea5b9a20f0f
 ```
 
 OSWorld2：
@@ -94,9 +94,10 @@ make smoke     # 可选：检查桌面截图和 noVNC 是否正常
 noVNC 链接默认带有访问 token，拿到链接的人可以访问对应桌面，请勿公开分享。
 如何手动拼接链接，以及如何选择 `AUTH_MODE=none`，见 [noVNC 与鉴权](../README_zh.md#novnc-与鉴权)。
 
-## 在 OSWorld2 中使用 Docker
+## 在沙箱中使用 Docker
 
-OSWorld2 基础镜像已经配置好 Docker 所需的数据目录。需要 Docker 的任务，
+上面列出的 OSWorld1 和 OSWorld2 基础镜像都已适配 Docker-in-Docker（DinD），
+配置好了 Docker 和 containerd 所需的数据目录。需要 Docker 的任务，
 可以在沙箱启动后安装 Docker，无需自己挂载磁盘。
 
 Docker 镜像、构建缓存和 volume 会占用沙箱的可写磁盘。本示例提供 20 GiB，
@@ -107,6 +108,8 @@ df -h /var/lib/docker /var/lib/containerd
 ```
 
 基础镜像不预装 Docker，请按任务要求安装并启动。
+
+这项支持不代表可以对正在运行的嵌套 Docker 容器制作快照并恢复。
 
 ## 配置凭证与结束使用
 

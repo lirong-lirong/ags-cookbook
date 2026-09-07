@@ -10,6 +10,17 @@ demo = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(demo)
 
 
+def test_default_osworld1_uses_pinned_dind_release():
+    root = Path(__file__).parents[1]
+    expected = (
+        'ccr.ccs.tencentyun.com/ags-image/osworld1-base:'
+        'upstream-091f5ef1-server-0919a09-ags.2@sha256:'
+        'b91a90cacd68d652d98d78cf83d16c39e191a69f18b8a866c94a5ea5b9a20f0f'
+    )
+    assert f'OSWORLD_BASE_IMAGE={expected}' in (root / '.env.example').read_text().splitlines()
+    assert expected in (root / 'docs/image-guide.zh-CN.md').read_text()
+
+
 def test_sts_session_token_is_passed_to_sdk(tmp_path, monkeypatch):
     monkeypatch.setenv('TENCENTCLOUD_SECRET_ID', 'test-id')
     monkeypatch.setenv('TENCENTCLOUD_SECRET_KEY', 'test-key')

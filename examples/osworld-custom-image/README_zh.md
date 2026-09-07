@@ -4,6 +4,7 @@
 安装了 Claude Code 的镜像。如果只想体验桌面，完成第一步即可。
 
 更多镜像定制说明见[基础镜像使用指南](docs/image-guide.zh-CN.md)。
+默认 OSWorld1 基础镜像已适配 Docker-in-Docker（DinD）所需存储，但不预装 Docker。
 
 ## 准备
 
