@@ -6,6 +6,9 @@
 更多镜像定制说明见[基础镜像使用指南](docs/image-guide.zh-CN.md)。
 默认 OSWorld1 基础镜像已适配 Docker-in-Docker（DinD）所需存储，但不预装 Docker。
 
+推荐基于提供的 base OCI 定制。如果必须迁移现有虚拟机，请参考
+[QCOW2 迁移指南](docs/qcow2-to-oci.zh-CN.md)。直接转换 QCOW2 不保证 Cube 启动或任务兼容性。
+
 ## 准备
 
 - Python 3.11+ 和 uv。

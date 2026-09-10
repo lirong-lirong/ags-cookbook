@@ -7,6 +7,10 @@ See the [Chinese base image guide](docs/image-guide.zh-CN.md) for more customiza
 options and Docker-in-Docker (DinD) usage. The default OSWorld1 base includes
 DinD storage support; Docker itself is not preinstalled.
 
+Building on the provided base OCI is recommended. If you must migrate an existing
+VM, see the [QCOW2 migration guide (Chinese)](docs/qcow2-to-oci.zh-CN.md).
+Converting a disk image does not guarantee Cube startup or OSWorld task compatibility.
+
 ## Prerequisites
 
 - Python 3.11+ and [uv](https://docs.astral.sh/uv/).

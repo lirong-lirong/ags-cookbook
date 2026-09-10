@@ -4,6 +4,9 @@
 上安装自己的软件，构建后推送到自己的仓库，再交给 AGS 运行。
 首次体验和 Claude Code 定制示例见 [README](../README_zh.md)。
 
+推荐使用本文的 base OCI 定制流程。已有 QCOW2 且必须保留完整环境时，参考
+[QCOW2 迁移指南](qcow2-to-oci.zh-CN.md)；转换格式本身不能保证在 Cube 中正常启动。
+
 ## 选择镜像
 
 | 镜像 | 用途 |
