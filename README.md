@@ -92,6 +92,7 @@ You can also enter an example directory directly and run its local `make setup` 
 | [`agentway-cookbook`](./examples/agentway-cookbook/README.md) | Kubernetes + Helm + Markdown | Deploy, operate, and observe AgentWay on Tencent AGS and TKE |
 | `browser-agent` | Python + browser sandbox + LLM | Browser automation agent |
 | `custom-image-go-sdk` | Go | Custom-image / custom-tool startup |
+| `template-v2-agentcbs-go` | Go | Restore a template v2 sandbox with a selected AgentCBS data volume and verify persistence |
 | `data-analysis` | Python + code sandbox | Multi-context data workflow |
 | [`deployment-cookbook`](./examples/deployment-cookbook/README.md) | agr CLI + Markdown + Python | Deployment, scaling, lifecycle, affinity, native MCP server, and persistent agent workspace scenarios |
 | [`session-cookbook`](./examples/session-cookbook/README.md) | Docker + Node.js + Python | Keep framework conversations in cloud Session, then reload them in a fresh process |

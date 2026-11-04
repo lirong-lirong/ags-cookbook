@@ -1,0 +1,4 @@
+# Historical false positive: an empty TENCENTCLOUD_TOKEN assignment
+# consumed the following public AGS_REGION=ap-guangzhou setting.
+# Exempt only this exact commit, file, rule and line.
+dde37dfe538a140d2680dc902aafdc9d9d26d7ff:examples/osworld-custom-image/.env.example:generic-api-key:3

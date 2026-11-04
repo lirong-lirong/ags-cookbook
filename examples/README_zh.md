@@ -53,6 +53,7 @@
 | [`agentway-cookbook`](./agentway-cookbook/README_zh.md) | 进阶 | Kubernetes + Helm + Markdown | `make run` | AgentWay 在 Tencent AGS 与 TKE 上的场景化操作手册 |
 | `browser-agent` | 进阶 | Python + 浏览器沙箱 + LLM | `make run` | 需要 OpenAI-compatible LLM backend 环境变量 |
 | `custom-image-go-sdk` | 进阶 | Go | `make run` | 依赖 AGS 账号中的自定义工具 / 镜像配置 |
+| `template-v2-agentcbs-go` | 进阶 | Go | `make run` | 需开通二期模板与 AgentCBS，创建或复用数据盘并验证持久化 |
 | `data-analysis` | 进阶 | Python + 代码沙箱 | `make run` | 会生成多种图表与报告文件 |
 | `deployment-cookbook` | 进阶 | agr CLI + Markdown | 按场景 README 操作 | 涵盖部署、伸缩、生命周期、亲和性与长驻 Agent 工作区 |
 | [`session-cookbook`](./session-cookbook/README_zh.md) | 进阶 | Docker + Node.js + Python | 按框架 README 操作 | 把框架会话存到云端 Session，并在新进程恢复 |
