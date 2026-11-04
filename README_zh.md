@@ -85,6 +85,7 @@ make example-run EXAMPLE=mini-rl
 | [`agentway-cookbook`](./examples/agentway-cookbook/README_zh.md) | Kubernetes + Helm + Markdown | 在 Tencent AGS 与 TKE 上部署、运维和观测 AgentWay |
 | `browser-agent` | Python + 浏览器沙箱 + LLM | 浏览器自动化 Agent |
 | `custom-image-go-sdk` | Go | 自定义镜像 / 自定义工具启动 |
+| `template-v2-agentcbs-go` | Go | 二期模板恢复后挂载指定 AgentCBS 数据盘，验证跨实例数据保留 |
 | `data-analysis` | Python + 代码沙箱 | 多 Context 数据分析 |
 | `deployment-cookbook` | agr CLI + Markdown | Deployment、伸缩、生命周期、亲和性与长驻 Agent 工作区场景 |
 | [`session-cookbook`](./examples/session-cookbook/README_zh.md) | Docker + Node.js + Python | 把框架会话存到云端 Session，并在新进程恢复 |

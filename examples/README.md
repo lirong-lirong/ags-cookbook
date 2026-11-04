@@ -53,6 +53,7 @@ Some heavier or externally overlaid examples are exceptions, but they should sti
 | [`agentway-cookbook`](./agentway-cookbook/README.md) | advanced | Kubernetes + Helm + Markdown | `make run` | Scenario guides for AgentWay on Tencent AGS and TKE; detailed guides are in Chinese |
 | `browser-agent` | advanced | Python + browser sandbox + LLM | `make run` | Requires OpenAI-compatible LLM backend env vars |
 | `custom-image-go-sdk` | advanced | Go | `make run` | Requires custom tool/image setup in AGS account |
+| `template-v2-agentcbs-go` | advanced | Go | `make run` | Requires template v2 and AgentCBS access; creates or reuses a data volume and verifies persistence |
 | `data-analysis` | advanced | Python + code sandbox | `make run` | Generates multiple output files |
 | [`deployment-cookbook`](./deployment-cookbook/README.md) | advanced | agr CLI + Markdown + Python | Follow a scenario README | Covers deployment, scaling, lifecycle, affinity, a native MCP server, and a persistent agent workspace |
 | [`session-cookbook`](./session-cookbook/README.md) | advanced | Docker + Node.js + Python | Follow a framework README | Keep framework conversations in cloud Session and reload them in a fresh process |
