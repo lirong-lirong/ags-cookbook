@@ -1,0 +1,15 @@
+# Attach the AGS envd data plane to either OSWorld base image.
+# /sbin/init (systemd), the desktop user and the OSWorld services are untouched.
+ARG OSWORLD_BASE_IMAGE
+ARG ENVD_IMAGE=ccr.ccs.tencentyun.com/ags-image/envd:v0.5.14@sha256:339efc1a2186ae32b9cbe388c0069c33f9c844361d7dcbc830f4e9863d6e8e51
+
+FROM ${ENVD_IMAGE} AS envd-provider
+
+FROM ${OSWORLD_BASE_IMAGE}
+USER root
+COPY --from=envd-provider --chmod=0755 /usr/bin/envd /usr/bin/envd
+COPY envd.service /etc/systemd/system/envd.service
+RUN mkdir -p /etc/systemd/system/multi-user.target.wants \
+    && ln -sf /etc/systemd/system/envd.service /etc/systemd/system/multi-user.target.wants/envd.service \
+    && /usr/bin/envd -version
+EXPOSE 49983

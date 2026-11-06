@@ -1,0 +1,30 @@
+{
+  "DefaultDecision": "deny",
+  "Rules": [
+    {
+      "Name": "allow-github-https",
+      "Resources": [
+        {
+          "Hosts": [
+            "github.com",
+            "*.github.com",
+            "githubusercontent.com",
+            "*.githubusercontent.com"
+          ],
+          "Ports": ["443"]
+        }
+      ],
+      "Decision": "allow"
+    },
+    {
+      "Name": "deny-model-api-and-example",
+      "Resources": [
+        {
+          "Hosts": ["api.openai.com", "example.com"],
+          "Ports": ["443"]
+        }
+      ],
+      "Decision": "deny"
+    }
+  ]
+}

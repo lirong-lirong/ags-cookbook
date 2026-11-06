@@ -1,0 +1,14 @@
+[Unit]
+Description=AGS envd data plane (CA injection, commands and files)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+Restart=always
+RestartSec=2
+ExecStart=/usr/bin/envd -port 49983
+
+[Install]
+WantedBy=multi-user.target
